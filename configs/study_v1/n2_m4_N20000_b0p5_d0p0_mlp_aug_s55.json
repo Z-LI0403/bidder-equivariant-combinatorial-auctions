@@ -1,0 +1,67 @@
+{
+  "stage": "FINAL",
+  "model": "mlp_aug",
+  "n": 2,
+  "m": 4,
+  "beta": 0.5,
+  "scales": [
+    1.0,
+    1.0
+  ],
+  "report_upper": 18.0,
+  "hidden": [
+    64,
+    64
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "train_size": 20000,
+  "validation_size": 256,
+  "test_size": 1024,
+  "batch_size": 64,
+  "iterations": 1500,
+  "learning_rate": 0.001,
+  "rho": 20.0,
+  "rho_increment": 5.0,
+  "rho_update_every": 100,
+  "dual_update_every": 25,
+  "log_every": 250,
+  "train_attack": {
+    "steps": 20,
+    "random_starts": 1,
+    "lr": 0.05
+  },
+  "eval_attack": {
+    "steps": 100,
+    "random_starts": 5,
+    "lr": 0.03
+  },
+  "audit_attack": {
+    "steps": 300,
+    "random_starts": 15,
+    "lr": 0.02
+  },
+  "audit_size": 128,
+  "gate": {
+    "max_mean_bidder_regret": 0.02,
+    "max_mean_regret_over_revenue": 0.05,
+    "min_revenue_over_welfare": 0.2,
+    "max_audit_regret_increase": 0.005,
+    "min_regret_reduction_fraction": 0.5
+  },
+  "train_pool_size": 50000,
+  "train_eval_size": 512,
+  "data_seed_offset": 200000,
+  "delta": 0.0,
+  "seed": 55,
+  "experiment_id": "n2_m4_N20000_b0p5_d0p0_mlp_aug_s55",
+  "experiments": [
+    "E1"
+  ],
+  "parameter_count": 14368
+}

@@ -1,0 +1,29 @@
+# Environments and generated outputs
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.pt
+ci-tests.xml
+reproductions/
+publication/
+# Publish only explicitly selected benchmark tables
+/results/*
+!/results/aggregate.csv
+!/results/per_seed.csv
+!/results/post_evaluation_per_seed.csv
+/configs/final_reproducibility.json
+/configs/publication_smoke.json
+# Internal project materials
+AGENTS.md
+PROJECT_STATUS.md
+REPORT.md
+RESEARCH_LOG.md
+research_agent_prompt.md
+Research_Plan*.docx
+/docs/README_local_original.md
+/src/report_study.py
+/src/prepare_study.py
+/tools/
+*.tar.gz
