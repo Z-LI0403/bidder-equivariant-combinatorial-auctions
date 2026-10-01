@@ -1,6 +1,6 @@
 # Reproducing the benchmark
 
-Install Python 3.11 and `requirements.lock.txt` as shown in the root README. The runner uses CPU execution, one PyTorch thread per training process, fixed random seeds, and deterministic algorithms. Matching software and hardware gives the strongest reproducibility; bitwise equality across platforms is not assumed.
+Install Python 3.11 and `requirements.txt` as shown in the root README. The runner uses CPU execution, one PyTorch thread per training process, fixed random seeds, and deterministic algorithms. Matching software and hardware gives the strongest reproducibility; bitwise equality across platforms is not assumed.
 
 ## Quick software check
 

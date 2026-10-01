@@ -69,7 +69,7 @@ def main():
     for path in (target/"configs").rglob("*.json"):
         value=json.loads(path.read_text(encoding="utf-8"))
         path.write_text(json.dumps(portable(value),indent=2,allow_nan=False)+"\n",encoding="utf-8")
-    for name in ("pytest.ini","requirements.lock.txt"):
+    for name in ("pytest.ini","requirements.txt"):
         shutil.copy2(root/name,target/name)
     print(f"Isolated {args.mode} reproduction: {target}",flush=True)
     subprocess.run([sys.executable,"-m","src.reproduce","--run-staged","--mode",args.mode,"--workers",str(args.workers)],cwd=target,check=True)
